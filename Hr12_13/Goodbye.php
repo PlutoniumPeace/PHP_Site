@@ -8,7 +8,7 @@ CSC155-201H -->
 <body>
 <center><b>YOU HAVE BEEN LOGGED OUT. CLICK BELOW TO LOGIN AGAIN</b></center>
 <form method="POST" action="log_in.php">
-<input type='submit' value="Login Again?"/>
+<center><input type='submit' value="Login Again?"/></center>
 </form>
 </body>
 </html>
