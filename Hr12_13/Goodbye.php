@@ -1,4 +1,7 @@
 <html>
+ <!-- I honor Parkland's core values by affirming that I have followed all academic integrity guidelines for$
+Juwan Hampton
+CSC155-201H -->
 <head>
 <title>Goodbye!</title>
 </head>
