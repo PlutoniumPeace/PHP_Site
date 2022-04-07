@@ -15,8 +15,16 @@ yay_or_nay();
 </head>
 <body>
 
-<p> This is the blue page.</p>
+<p> This is the blue page.</p><br>
+<center><img src="images/b-shirt.jpg" width="100" height="100"/></center><br>
 
+<center><label for="shirts">How many shirts?</label>
+<select id="shirts" name="shirts">
+  <option value="add">Add 1 to Cart</option>
+  <option value="minus">Subtract 1 from Cart</option>
+  <option value="remove_all">Remove All</option>
+</select>
+</center>
 </body>
 <?php readfile("lib/foot.html"); ?>
 
