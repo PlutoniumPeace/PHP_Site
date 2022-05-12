@@ -8,8 +8,12 @@ CSC155-201H -->
 require("lib/phpfunctions.php");
 
 session_start();
-yay_or_nay();
 
+function user_set(){
+	if (isset($_SESSION['username']) && isset($_SESSION['password'])){
+	header('Location: welcome.php');
+}
+}
 ?>
 <?php readfile("lib/head.html"); ?>
 </head>

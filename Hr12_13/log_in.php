@@ -16,12 +16,16 @@ if (isset($_POST['button']))
 {
      if ($_POST['button'] == 'Click to Login')
      {
-	if (validate_credentials($username, $password))
+	if (validate_credentials(mariaConnect(),$username, $password))
 	{
-	     $_SESSION['user_name'] = $username;
+	     $_SESSION['username'] = $_POST[$user_name];
+	     $_SESSION['password'] = $_POST[$user_pass];
 	     header('Location: welcome.php');
 	}
 	$message = "Invalid username or password! Please try again.";
+     }
+     elseif ($_POST['button'] == 'Register New User'){
+        header('Location: Add_user.php');
      }
 }
 ?>
@@ -32,7 +36,8 @@ if (isset($_POST['button']))
 Name: <input type='text' name='user_name' value='<?php showPost("user_name");?>'><br>
 Password: <input type='text' name='user_pass' value='<?php showPost("user_pass");?>'><br>
 <input type='submit' name='button' value='Click to Login'><br>
-name is User1, password is Password1<br>
+Test User: username = User1, password = Password1<br>
+<input type='submit' name='button' value='Register New User'>
 <div style='position: absolute; bottom: 10px;'><p><?php echo $message;?></p></div>
 
 </body>
